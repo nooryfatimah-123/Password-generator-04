@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.google.com/icons?selected=Material+Symbols+Outlined:content_copy:FILL@0;wght@400;GRAD@0;opsz@24&icon.query=copy&icon.size=24&icon.color=%235f6368&icon.platform=web">
+</head>
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+
+        <div class="inputbox">
+            <input type="text" class="passbox" id="passbox" disabled>
+
+            <svg xmlns ="http://www.w3.org/2000/svg" id="copyicon" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"/></svg>
+
+        </div>
+        <input type="range" min="1" max="30" value="8" id="inputslider">
+
+         <div class="row">
+            <p>Password Length</p>
+            <span id="slidervalue"></span>
+         </div>
+
+        <div class="row">
+            <label for="lowercase">Include Lowercase Letters (a-z)</label>
+            <input type="checkbox" name="lowercase" id="lowercase">
+      </div>
+      
+      <div class="row">
+        <label for="uppercase">Include Uppercase Letters (A-Z)</label>
+        <input type="checkbox" name="uppercase" id="uppercase">
+  </div>
+   
+  
+  <div class="row">
+    <label for="numbers">Include Numbers (0-9)</label>
+    <input type="checkbox" name="numbers" id="numbers">
+</div>
+
+
+<div class="row">
+    <label for="symbols">Include Symbols (@!$...)</label>
+    <input type="checkbox" name="symbols" id="symbols">
+</div>
+
+<button type="button" class="genbtn" id="genbtn">Generate Password</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
